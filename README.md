@@ -21,16 +21,11 @@ Quickly find and open a pdf among a collection of thousands of unsorted pdfs thr
 2. __Install binary__. Do either one of the two steps below:
     - __Compile from source with ``go`` and ``go get``.__
     With a working ``golang`` installation, do 
-    ```go get github.com/bellecp/fast-p```
+    ```go get github.com/marzzzello/fast-p```
     It will fetch the code and its dependencies,
     compile and create an executable ``fast-p`` in the ``/bin`` folder of your go
     installation, typically ``~/go/bin``. Make sure the command ``fast-p`` can be
     found (for instance, add ``~/go/bin`` to your ``$PATH``.)
-    - Or: __Use the precompiled binary for your architecture.__ Download the binary that corresponds to your
-    architecture at https://github.com/bellecp/fast-p/releases and make sure that
-    the command ``fast-p`` can be found. For instance,
-    put the binary file ``fast-p`` in ``~/custom/bin`` and add ``export
-    PATH=~/custom/bin:$PATH`` to your ``.bashrc``.
 
 3. __Tweak your .bashrc__. Add the following code to your ``.bashrc``
 ```
@@ -50,16 +45,6 @@ p () {
 ```
 - You may replace ``ag -U -g ".pdf$"`` with another command that returns a list of pdf files.
 - You may replace ``open=...`` by your favorite PDF viewer, for instance ``open=evince`` or ``open=okular``.
-
-# Installation on OSX with homebrew
-
-1. Install [homebrew](https://brew.sh/) and  __run__
-```
-brew install bellecp/fast-p/fast-pdf-finder
-```
-_The above brew formula is experimental. 
-Please report any issues/suggestions/feedback at <https://github.com/bellecp/fast-p/issues/11>_
-
 
 2. __Tweak your .bashrc__. Add the following code to your ``.bashrc``
 ```
@@ -115,9 +100,3 @@ and in Ubuntu Settings/Keyboard, add a custom shortcut that runs the command
 # See it in action
 
 ![illustration of the p command](https://user-images.githubusercontent.com/1019692/34446795-12229072-ecac-11e7-856a-ec0df0de60ae.gif)
-
-
-# Is the historical bash code still available?
-
-Yes, see https://github.com/bellecp/fast-p/blob/master/p but using the go binary as explained above is recommended for speed and interoperability.
-
