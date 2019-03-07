@@ -3,7 +3,6 @@
 Quickly find and open a pdf among a collection of thousands of unsorted pdfs through fzf (fuzzy finder)
 
 - [Installation on Linux](#installation-on-unix-or-linux-based-systems)
-- [Installation on OSX](#installation-on-osx-with-homebrew)
 - [Usage](#usage)
 - [How to clear the cache?](#how-to-clear-the-cache)
 - [Launch with keyboard shortcut in Ubuntu](#launch-with-keyboard-shortcut-in-ubuntu)
