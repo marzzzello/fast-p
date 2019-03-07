@@ -94,7 +94,7 @@ func main() {
         }
     }
     for hash, filepath := range missing {
-        cmd := exec.Command("pdftotext", "-l", "2", filepath, "-")
+        cmd := exec.Command("pdftotext", filepath, "-")
         out, err := cmd.CombinedOutput()
         content := string(out)
         if err != nil {
